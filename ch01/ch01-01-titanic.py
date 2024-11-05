@@ -5,8 +5,8 @@ import pandas as pd
 # 学習データ、テストデータの読み込み
 # -----------------------------------
 # 学習データ、テストデータの読み込み
-train = pd.read_csv('../input/ch01-titanic/train.csv')
-test = pd.read_csv('../input/ch01-titanic/test.csv')
+train = pd.read_csv('kagglebook/input/sample-data/train.csv')
+test = pd.read_csv('kagglebook/input/sample-data/test.csv')
 
 # 学習データを特徴量と目的変数に分ける
 train_x = train.drop(['Survived'], axis=1)

@@ -6,7 +6,7 @@ import pandas as pd
 # -----------------------------------
 
 # ワイドフォーマットのデータを読み込む
-df_wide = pd.read_csv('../input/ch03/time_series_wide.csv', index_col=0)
+df_wide = pd.read_csv('kagglebook/input/ch03/time_series_wide.csv', index_col=0)
 # インデックスの型を日付型に変更する
 df_wide.index = pd.to_datetime(df_wide.index)
 

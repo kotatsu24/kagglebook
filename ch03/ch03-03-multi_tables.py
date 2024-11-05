@@ -5,9 +5,9 @@ import pandas as pd
 # データの結合
 # -----------------------------------
 # データの読み込み
-train = pd.read_csv('../input/ch03/multi_table_train.csv')
-product_master = pd.read_csv('../input/ch03/multi_table_product.csv')
-user_log = pd.read_csv('../input/ch03/multi_table_log.csv')
+train = pd.read_csv('kagglebook/input/ch03/multi_table_train.csv')
+product_master = pd.read_csv('kagglebook/input/ch03/multi_table_product.csv')
+user_log = pd.read_csv('kagglebook/input/ch03/multi_table_log.csv')
 
 # -----------------------------------
 # 図の形式のデータフレームがあるとする
