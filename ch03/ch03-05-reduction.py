@@ -7,10 +7,10 @@ import pandas as pd
 # train_xは学習データ、train_yは目的変数、test_xはテストデータ
 # pandasのDataFrame, Seriesで保持します。（numpyのarrayで保持することもあります）
 
-train = pd.read_csv('../input/sample-data/train_preprocessed_onehot.csv')
+train = pd.read_csv('kagglebook/input/sample-data/train_preprocessed_onehot.csv')
 train_x = train.drop(['target'], axis=1)
 train_y = train['target']
-test_x = pd.read_csv('../input/sample-data/test_preprocessed_onehot.csv')
+test_x = pd.read_csv('kagglebook/input/sample-data/test_preprocessed_onehot.csv')
 
 # 説明用に学習データとテストデータの元の状態を保存しておく
 train_x_saved = train_x.copy()

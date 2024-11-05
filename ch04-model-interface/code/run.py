@@ -1,10 +1,14 @@
 import numpy as np
 import pandas as pd
 
+import inspect
+
 from model_nn import ModelNN
 from model_xgb import ModelXGB
 from runner import Runner
 from util import Submission
+
+argspec = inspect.getfullargspec()
 
 if __name__ == '__main__':
 

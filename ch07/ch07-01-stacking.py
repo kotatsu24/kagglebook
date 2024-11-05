@@ -7,16 +7,16 @@ import pandas as pd
 # train_xは学習データ、train_yは目的変数、test_xはテストデータ
 # pandasのDataFrame, Seriesで保持します。（numpyのarrayで保持することもあります）
 
-train = pd.read_csv('../input/sample-data/train_preprocessed.csv')
+train = pd.read_csv('kagglebook/input/sample-data/train_preprocessed.csv')
 train_x = train.drop(['target'], axis=1)
 train_y = train['target']
-test_x = pd.read_csv('../input/sample-data/test_preprocessed.csv')
+test_x = pd.read_csv('kagglebook/input/sample-data/test_preprocessed.csv')
 
 # neural net用のデータ
-train_nn = pd.read_csv('../input/sample-data/train_preprocessed_onehot.csv')
+train_nn = pd.read_csv('kagglebook/input/sample-data/train_preprocessed_onehot.csv')
 train_x_nn = train_nn.drop(['target'], axis=1)
 train_y_nn = train_nn['target']
-test_x_nn = pd.read_csv('../input/sample-data/test_preprocessed_onehot.csv')
+test_x_nn = pd.read_csv('kagglebook/input/sample-data/test_preprocessed_onehot.csv')
 
 # ---------------------------------
 # スタッキング

@@ -8,10 +8,10 @@ import pandas as pd
 # pandasのDataFrame, Seriesで保持します。（numpyのarrayで保持することもあります）
 # one-hot encodingされたものを読み込む
 
-train = pd.read_csv('../input/sample-data/train_preprocessed_onehot.csv')
+train = pd.read_csv('kagglebook/input/sample-data/train_preprocessed_onehot.csv')
 train_x = train.drop(['target'], axis=1)
 train_y = train['target']
-test_x = pd.read_csv('../input/sample-data/test_preprocessed_onehot.csv')
+test_x = pd.read_csv('kagglebook/input/sample-data/test_preprocessed_onehot.csv')
 
 # 学習データを学習データとバリデーションデータに分ける
 from sklearn.model_selection import KFold

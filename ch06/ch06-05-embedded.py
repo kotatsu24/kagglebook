@@ -6,7 +6,7 @@ import pandas as pd
 # ---------------------------------
 # train_xは学習データ、train_yは目的変数
 # 欠損値が扱えないため、欠損値を補完したデータを読み込む
-train = pd.read_csv('../input/sample-data/train_preprocessed_onehot.csv')
+train = pd.read_csv('kagglebook/input/sample-data/train_preprocessed_onehot.csv')
 train_x = train.drop(['target'], axis=1)
 train_y = train['target']
 # ---------------------------------
@@ -27,7 +27,7 @@ print(top_cols, top_importances)
 # xgboostの特徴量の重要度
 # ---------------------------------
 # train_xは学習データ、train_yは目的変数
-train = pd.read_csv('../input/sample-data/train_preprocessed.csv')
+train = pd.read_csv('kagglebook/input/sample-data/train_preprocessed.csv')
 train_x = train.drop(['target'], axis=1)
 train_y = train['target']
 # ---------------------------------
